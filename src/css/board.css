@@ -1,0 +1,22 @@
+.board-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* The initial state of the board */
+
+.board-enter {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+}
+
+
+/* The final state of the board */
+
+.board-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+}
